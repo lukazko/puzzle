@@ -19,7 +19,7 @@ function createPuzzle() {
         if (pos !== null) {
             const row = Math.floor(pos / size);
             const col = pos % size;
-            tile.css('background-position', `-${col * 100}px -${row * 100}px`);
+            tile.css('background-position', `-${col * 120}px -${row * 120}px`);
         } else {
             tile.addClass('empty');
         }
@@ -60,7 +60,7 @@ function updateTileStyle(index) {
         const col = val % size;
         tile.css({
             'background-image': 'url("bg.jpg")',
-            'background-position': `-${col * 100}px -${row * 100}px`
+            'background-position': `-${col * 120}px -${row * 120}px`
         });
     }
 }
@@ -108,7 +108,7 @@ $('#cheat').on('click', function () {
             const col = i % size;
             tile.css({
                 'background-image': 'url("bg.jpg")',
-                'background-position': `-${col * 100}px -${row * 100}px`
+                'background-position': `-${col * 120}px -${row * 120}px`
             });
         }
 
